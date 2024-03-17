@@ -1,7 +1,9 @@
-const HomePage = () => {
+import PopularMovies from "@/components/home/PopularMovies";
+
+const HomePage = async () => {
 	return (
-		<div>
-			<h2>home page</h2>
+		<div className="p-20">
+			<PopularMovies />
 		</div>
 	);
 };
