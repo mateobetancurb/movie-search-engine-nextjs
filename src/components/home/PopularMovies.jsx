@@ -18,8 +18,10 @@ export const PopularMovies = async () => {
 			<Carousel>
 				<CarouselContent>
 					{popularMoviesList.map((movie) => (
-						<CarouselItem key={movie.id}>
-							<h2>{movie.original_title} </h2>
+						<CarouselItem
+							key={movie.id}
+							className="md:basis-1/2 lg:basis-1/5 pl-4"
+						>
 							<Image
 								src={`${imageDomainUrl}${movie.poster_path}`}
 								alt={movie.original_title}
