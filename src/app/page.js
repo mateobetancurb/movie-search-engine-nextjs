@@ -1,4 +1,4 @@
-import PopularMovies from "@/components/home/PopularMovies";
+import { PopularMovies } from "@/components";
 
 const HomePage = async () => {
 	return (
