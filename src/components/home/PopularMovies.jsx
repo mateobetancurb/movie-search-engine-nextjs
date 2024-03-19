@@ -5,11 +5,11 @@ import {
 	CarouselItem,
 	CarouselNext,
 	CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "@/components";
 
 import { getPopularMovies } from "@/services/movies";
 
-const PopularMovies = async () => {
+export const PopularMovies = async () => {
 	const popularMoviesList = await getPopularMovies();
 	const imageDomainUrl = "https://image.tmdb.org/t/p/w500";
 
@@ -35,5 +35,3 @@ const PopularMovies = async () => {
 		</section>
 	);
 };
-
-export default PopularMovies;
