@@ -5,6 +5,9 @@ export * from "./home/PopularMovies";
 export * from "./shared/Header";
 export * from "./shared/Navbar";
 export * from "./shared/Footer";
+export * from "./shared/MovieDetails";
+
+// shared - client components
 export { NavbarItem } from "./shared/NavbarItem";
 
 // ui
