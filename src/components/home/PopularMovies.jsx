@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
 	Carousel,
 	CarouselContent,
@@ -22,12 +23,14 @@ export const PopularMovies = async () => {
 							key={movie.id}
 							className="md:basis-1/2 lg:basis-1/5 pl-4"
 						>
-							<Image
-								src={`${imageDomainUrl}${movie.poster_path}`}
-								alt={movie.original_title}
-								width={200}
-								height={200}
-							/>
+							<Link href={`pelicula/${movie.id}`}>
+								<Image
+									src={`${imageDomainUrl}${movie.poster_path}`}
+									alt={movie.original_title}
+									width={200}
+									height={200}
+								/>
+							</Link>
 						</CarouselItem>
 					))}
 				</CarouselContent>
