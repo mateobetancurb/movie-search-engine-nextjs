@@ -1,7 +1,6 @@
+import { getMovieDetailsById } from "@/services/movies";
+
 export default async function MoviePage({ params }) {
-	return (
-		<>
-			<h2>movie page {params.id} </h2>
-		</>
-	);
+	const movieDetails = await getMovieDetailsById(params.id);
+	return <>{JSON.stringify(movieDetails)}</>;
 }
