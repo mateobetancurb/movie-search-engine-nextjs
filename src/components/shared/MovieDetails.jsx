@@ -2,6 +2,33 @@ import Image from "next/image";
 
 export const MovieDetails = ({ details }) => {
 	const imageDomainUrl = "https://image.tmdb.org/t/p/w500";
+
+	const isMovieForKids = () => {
+		if (details.adult === true) {
+			return (
+				<div className="flex gap-2 my-5 text-white">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						strokeWidth="1.5"
+						stroke="currentColor"
+						className="w-6 h-6"
+					>
+						<path
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
+						/>
+					</svg>
+					<p className="text-white">Película NO apta para niños</p>
+				</div>
+			);
+		} else {
+			return null;
+		}
+	};
+
 	return (
 		<div className="relative h-screen">
 			<div
@@ -17,33 +44,23 @@ export const MovieDetails = ({ details }) => {
 						<Image
 							src={`${imageDomainUrl}${details.backdrop_path}`}
 							alt={details.original_title}
-							priority={false}
+							priority={true}
 							width={900}
 							height={900}
 							className="rounded-xl object-cover"
 						/>
 					</div>
 					<div className="flex-1 flex flex-col justify-center">
-						<h2 className="text-center font-bold text-2xl">
+						<h2 className="text-center font-bold text-2xl mb-5">
 							{details.original_title}
 						</h2>
-						<p>{details.overview}</p>
+						{isMovieForKids()}
+						<p className="font-bold">
+							Descripción:{" "}
+							<span className="font-normal">{details.overview}</span>
+						</p>
 					</div>
 				</section>
-				<p className="text-white ">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-					provident hic temporibus labore? Aliquam soluta cum enim fugit
-					cupiditate laudantium deserunt perferendis repudiandae ratione. Sunt
-					quaerat rerum veritatis doloribus vel porro non dignissimos aliquid
-					maxime fugit nobis itaque delectus, qui repudiandae assumenda eius ad
-					a consequatur incidunt dolorum veniam. Maxime suscipit numquam
-					voluptatibus voluptates animi aliquid autem rem, amet distinctio quos
-					ipsum reiciendis non nostrum similique dicta, sed aspernatur sapiente
-					nobis adipisci! Corporis, libero. Ab hic aliquid pariatur quo
-					voluptatibus autem ea error necessitatibus dolorem corporis laborum
-					numquam, fugit explicabo? Saepe, suscipit mollitia voluptatum ipsam
-					aspernatur rem eligendi repudiandae quae qui fugit?
-				</p>
 			</main>
 		</div>
 	);
