@@ -29,6 +29,7 @@ export const PopularMovies = async () => {
 									alt={movie.original_title}
 									width={200}
 									height={200}
+									priority={true}
 								/>
 							</Link>
 						</CarouselItem>
