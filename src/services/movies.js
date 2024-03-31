@@ -45,3 +45,25 @@ export const getMovieDetailsById = async (id) => {
 		throw error;
 	}
 };
+
+export const getUpcomingMovies = async () => {
+	try {
+		const ACCESS_TOKEN_API = env.ACCESS_TOKEN_API;
+		const req = await fetch(TMDB_URLS.movies.upcoming, {
+			headers: {
+				accept: "application/json",
+				Authorization: `Bearer ${ACCESS_TOKEN_API}`,
+			},
+		});
+
+		if (!req.ok) {
+			throw new Error(`HTTP error ${req.status}`);
+		}
+
+		const { results } = await req.json();
+		return results;
+	} catch (error) {
+		console.error("Error al obtener las películas que van a lanzarse:", error);
+		throw error;
+	}
+};
