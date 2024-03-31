@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { formatDate } from "@/helpers";
 
 export const MovieDetails = ({ details }) => {
@@ -40,6 +41,26 @@ export const MovieDetails = ({ details }) => {
 				className="bg-cover bg-center h-screen absolute top-0 left-0 right-0 bottom-0 z-10"
 			/>
 			<main className="relative top-14 bg-black rounded-xl w-3/4 p-5 items-center mx-auto h-fit text-white">
+				<Link
+					href={"/"}
+					className="flex gap-2 bg-neutral-600 px-5 py-1 rounded-xl text-white absolute z-20 top-5 left-5 hover:bg-neutral-700 transition-all"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						strokeWidth="1.5"
+						stroke="currentColor"
+						className="w-4 h-6"
+					>
+						<path
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+						/>
+					</svg>
+					Volver
+				</Link>
 				<h2 className="text-center font-bold text-2xl mb-5">
 					{details?.original_title}
 				</h2>
