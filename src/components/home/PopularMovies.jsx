@@ -15,7 +15,8 @@ export const PopularMovies = async () => {
 	const imageDomainUrl = "https://image.tmdb.org/t/p/w500";
 
 	return (
-		<section>
+		<section className="mb-10">
+			<h2 className="text-white text-xl mb-5">Películas populares</h2>
 			<Carousel>
 				<CarouselContent>
 					{popularMoviesList.map((movie) => (
