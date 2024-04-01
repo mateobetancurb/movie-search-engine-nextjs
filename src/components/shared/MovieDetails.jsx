@@ -43,7 +43,7 @@ export const MovieDetails = ({ details }) => {
 			<main className="relative top-14 bg-black rounded-xl w-3/4 p-5 items-center mx-auto h-fit text-white">
 				<Link
 					href={"/"}
-					className="flex gap-2 bg-neutral-600 px-5 py-1 rounded-xl text-white absolute z-20 top-5 left-5 hover:bg-neutral-700 transition-all"
+					className="flex gap-2 bg-neutral-600 px-5 py-1 rounded-xl text-white absolute z-20 top-[-15px] left-5 hover:bg-neutral-700 transition-all"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -99,6 +99,11 @@ export const MovieDetails = ({ details }) => {
 						</p>
 					</div>
 				</section>
+				<div className="flex justify-end">
+					<button className="absolute z-20 shadow-xl bg-neutral-600 px-5 py-1 rounded-xl text-white hover:bg-neutral-700 transition-all">
+						❤️ Agregar a favoritos
+					</button>
+				</div>
 			</main>
 		</div>
 	);
