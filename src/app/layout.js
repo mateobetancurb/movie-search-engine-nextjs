@@ -1,3 +1,4 @@
+import { Toaster } from "@/components";
 import { Header, Navbar } from "@/components";
 
 import "./globals.css";
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
 				<Header />
 				<Navbar />
 				{children}
+				<Toaster position="top-right" />
 			</body>
 		</html>
 	);
