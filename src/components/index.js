@@ -7,6 +7,7 @@ export * from "./shared/Navbar";
 export * from "./shared/Footer";
 export * from "./shared/MovieDetails";
 export * from "./shared/MoviesCarousel";
+export * from "./shared/FavoriteButton";
 
 // shared - client components
 export { NavbarItem } from "./shared/NavbarItem";
