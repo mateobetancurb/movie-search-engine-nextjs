@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FavoriteButton } from "@/components";
 import { formatDate } from "@/helpers";
 
 export const MovieDetails = ({ details }) => {
@@ -99,11 +100,7 @@ export const MovieDetails = ({ details }) => {
 						</p>
 					</div>
 				</section>
-				<div className="flex justify-end">
-					<button className="absolute z-20 shadow-xl bg-neutral-600 px-5 py-1 rounded-xl text-white hover:bg-neutral-700 transition-all">
-						❤️ Agregar a favoritos
-					</button>
-				</div>
+				<FavoriteButton movie={details} />
 			</main>
 		</div>
 	);
