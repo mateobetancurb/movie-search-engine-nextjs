@@ -15,3 +15,4 @@ export { NavbarItem } from "./shared/NavbarItem";
 // ui
 export * from "./ui/button";
 export * from "./ui/carousel";
+export * from "./ui/sonner";
