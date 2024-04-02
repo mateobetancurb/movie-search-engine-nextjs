@@ -11,18 +11,12 @@ export const FavoriteButton = ({ movie }) => {
 		return () => {
 			addMovieToFavorites(movie);
 			console.log(favoriteMovies);
-			toast.success(
-				"Película agregada a favoritos",
-				{
-					action: {
-						label: "Ver",
-						onClick: () => router.push("/favoritos"),
-					},
+			toast.success("Película agregada a favoritos", {
+				action: {
+					label: "Ver",
+					onClick: () => router.push("/favoritos"),
 				},
-				{
-					position: "top-right",
-				}
-			);
+			});
 		};
 	};
 
