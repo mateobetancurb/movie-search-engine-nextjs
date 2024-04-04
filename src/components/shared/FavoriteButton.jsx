@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import useStore from "@/stores/favorites";
 
 export const FavoriteButton = ({ movie }) => {
-	const { favoriteMovies, addMovieToFavorites, showSonner } = useStore();
+	const { favoriteMovies, addMovieToFavorites } = useStore();
 	const router = useRouter();
 
 	const addMovieToFavoriteList = (movie) => {
