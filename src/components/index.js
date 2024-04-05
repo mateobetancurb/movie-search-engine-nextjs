@@ -8,6 +8,7 @@ export * from "./global/Footer";
 export * from "./global/MovieDetails";
 export * from "./global/MoviesCarousel";
 export * from "./global/FavoriteButton";
+export * from "./global/FavoriteList";
 
 // shared - client components
 export { NavbarItem } from "./global/NavbarItem";
