@@ -1,5 +1,7 @@
 // home
 export * from "./home/PopularMovies";
+export * from "./home/UpcomingMovies";
+export * from "./home/NowPlaying";
 
 // shared
 export * from "./global/Header";
