@@ -10,7 +10,6 @@ export const FavoriteButton = ({ movie }) => {
 	const addMovieToFavoriteList = (movie) => {
 		return () => {
 			addMovieToFavorites(movie);
-			console.log(favoriteMovies);
 			toast.success("Película agregada a favoritos", {
 				action: {
 					label: "Ver",
