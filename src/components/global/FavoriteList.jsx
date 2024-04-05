@@ -1,10 +1,20 @@
 "use client";
+import { toast } from "sonner";
 import Image from "next/image";
 import useStore from "@/stores/favorites";
 
 export const FavoriteList = () => {
-	const { favoriteMovies } = useStore();
+	const { favoriteMovies, deleteMovieToFavorites } = useStore();
 	const imageDomainUrl = "https://image.tmdb.org/t/p/w500";
+
+	const showSonnerWhenMovieWasDeleted = (movie) => {
+		try {
+			deleteMovieToFavorites(movie);
+			toast.success("Película eliminada de favoritos");
+		} catch (error) {
+			console.log(error);
+		}
+	};
 
 	return (
 		<div className="grid px-10 grid-cols-4 my-10 gap-5">
@@ -26,7 +36,10 @@ export const FavoriteList = () => {
 						</h2>
 						<p className="clamp-6 overflow-hidden h-24">{movie.overview}</p>
 
-						<button className="bg-red-400 mx-auto px-5 py-1 rounded-xl flex gap-2 hover:bg-red-700 transition-all">
+						<button
+							onClick={() => showSonnerWhenMovieWasDeleted(movie)}
+							className="bg-red-400 mx-auto px-5 py-1 rounded-xl flex gap-2 hover:bg-red-700 transition-all"
+						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
