@@ -2,15 +2,15 @@
 export * from "./home/PopularMovies";
 
 // shared
-export * from "./shared/Header";
-export * from "./shared/Navbar";
-export * from "./shared/Footer";
-export * from "./shared/MovieDetails";
-export * from "./shared/MoviesCarousel";
-export * from "./shared/FavoriteButton";
+export * from "./global/Header";
+export * from "./global/Navbar";
+export * from "./global/Footer";
+export * from "./global/MovieDetails";
+export * from "./global/MoviesCarousel";
+export * from "./global/FavoriteButton";
 
 // shared - client components
-export { NavbarItem } from "./shared/NavbarItem";
+export { NavbarItem } from "./global/NavbarItem";
 
 // ui
 export * from "./ui/button";
