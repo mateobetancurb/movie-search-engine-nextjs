@@ -3,7 +3,7 @@ export * from "./home/PopularMovies";
 export * from "./home/UpcomingMovies";
 export * from "./home/NowPlaying";
 
-// shared
+// global
 export * from "./global/Header";
 export * from "./global/Navbar";
 export * from "./global/Footer";
@@ -12,7 +12,7 @@ export * from "./global/MoviesCarousel";
 export * from "./global/FavoriteButton";
 export * from "./global/FavoriteList";
 
-// shared - client components
+// global - client components
 export { NavbarItem } from "./global/NavbarItem";
 
 // ui
