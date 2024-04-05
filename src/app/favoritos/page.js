@@ -1,3 +1,5 @@
+import { FavoriteList } from "@/components";
+
 export const metadata = {
 	title: "Tus favoritos",
 	description:
@@ -7,7 +9,7 @@ export const metadata = {
 export default function Favorites() {
 	return (
 		<>
-			<h2>favoritos</h2>
+			<FavoriteList />
 		</>
 	);
 }
