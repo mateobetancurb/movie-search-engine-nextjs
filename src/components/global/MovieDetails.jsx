@@ -62,10 +62,10 @@ export const MovieDetails = ({ details }) => {
 					</svg>
 					Volver
 				</Link>
-				<h2 className="text-center font-bold text-2xl mb-5">
+				<h2 className="text-center font-bold text-2xl my-7">
 					{details?.original_title}
 				</h2>
-				<section className="flex gap-5 mb-5">
+				<section className="md:flex gap-5 mb-5">
 					<div className="flex-1">
 						<Image
 							src={`${imageDomainUrl}${details?.backdrop_path}`}
@@ -73,10 +73,10 @@ export const MovieDetails = ({ details }) => {
 							priority={true}
 							width={900}
 							height={900}
-							className="rounded-xl object-cover"
+							className="rounded-xl mb-10 md:mb-0 object-cover"
 						/>
 					</div>
-					<div className="flex-1 space-y-3 flex flex-col justify-center">
+					<div className="flex-1 space-y-5 flex flex-col justify-center">
 						<p className="font-bold">
 							📅 Fecha de lanzamiento:{" "}
 							<span className="font-normal">
