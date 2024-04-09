@@ -17,7 +17,7 @@ export const MoviesCarousel = async ({ movies }) => {
 				{movies?.map((movie) => (
 					<CarouselItem
 						key={movie.id}
-						className="md:basis-1/2 lg:basis-1/5 pl-4"
+						className="basis-6/7 md:basis-1/2 lg:basis-1/5 pl-4"
 					>
 						<Link href={`pelicula/${movie.id}`}>
 							<Image
