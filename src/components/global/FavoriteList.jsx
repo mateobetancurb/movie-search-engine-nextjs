@@ -30,7 +30,7 @@ export const FavoriteList = () => {
 					</Link>
 				</div>
 			) : (
-				<div className="grid px-10 grid-cols-4 my-10 gap-5">
+				<div className="grid px-10 md:grid-cols-4 my-10 gap-5">
 					{favoriteMovies.map((movie) => (
 						<div
 							key={movie.id}
