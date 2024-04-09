@@ -41,7 +41,7 @@ export const MovieDetails = ({ details }) => {
 				}}
 				className="bg-cover bg-center h-screen absolute top-0 left-0 right-0 bottom-0 z-10"
 			/>
-			<main className="relative top-14 bg-black rounded-xl w-3/4 p-5 items-center mx-auto h-fit text-white">
+			<main className="relative top-14 bg-black rounded-xl w-5/6 md:w-3/4 p-5 items-center mx-auto h-fit text-white">
 				<Link
 					href={"/"}
 					className="flex gap-2 bg-neutral-600 px-5 py-1 rounded-xl text-white absolute z-20 top-[-15px] left-5 hover:bg-neutral-700 transition-all"
