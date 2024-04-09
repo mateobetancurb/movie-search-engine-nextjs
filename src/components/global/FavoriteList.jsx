@@ -42,6 +42,7 @@ export const FavoriteList = () => {
 								height={350}
 								alt={movie.original_title}
 								className="mb-5 rounded-t-xl"
+								priority={true}
 							/>
 							<div className="px-5 space-y-5">
 								<h2 className="text-lg font-bold text-center">
