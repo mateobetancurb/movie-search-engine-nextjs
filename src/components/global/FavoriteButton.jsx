@@ -7,15 +7,21 @@ export const FavoriteButton = ({ movie }) => {
 	const { favoriteMovies, addMovieToFavorites } = useStore();
 	const router = useRouter();
 
+	const isMovieAlreadyAdded = favoriteMovies.some(
+		(favoriteMovie) => favoriteMovie.id === movie.id
+	);
+
 	const addMovieToFavoriteList = (movie) => {
 		return () => {
-			addMovieToFavorites(movie);
-			toast.success("Película agregada a favoritos", {
-				action: {
-					label: "Ver",
-					onClick: () => router.push("/favoritos"),
-				},
-			});
+			if (!isMovieAlreadyAdded) {
+				addMovieToFavorites(movie);
+				toast.success("Película agregada a favoritos", {
+					action: {
+						label: "Ver",
+						onClick: () => router.push("/favoritos"),
+					},
+				});
+			}
 		};
 	};
 
@@ -23,9 +29,13 @@ export const FavoriteButton = ({ movie }) => {
 		<div className="flex justify-end">
 			<button
 				onClick={addMovieToFavoriteList(movie)}
-				className="absolute z-20 shadow-xl bg-neutral-600 px-5 py-1 rounded-xl text-white hover:bg-neutral-700 transition-all"
+				className={`absolute z-20 shadow-xl bg-neutral-600 px-5 py-1 rounded-xl text-white hover:bg-neutral-700 transition-all ${
+					isMovieAlreadyAdded ? "cursor-not-allowed" : null
+				} `}
 			>
-				Agregar a favoritos ❤️
+				{isMovieAlreadyAdded
+					? "Película agregada a favoritos ✅"
+					: "Agregar a favoritos ❤️"}
 			</button>
 		</div>
 	);
