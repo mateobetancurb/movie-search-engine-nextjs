@@ -1,3 +1,4 @@
+import { ViewTransitions } from "next-view-transitions";
 import { Toaster } from "@/components";
 import { Header, Navbar } from "@/components";
 
@@ -10,13 +11,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="es">
-			<body className="bg-neutral-800">
-				<Header />
-				<Navbar />
-				{children}
-				<Toaster position="top-right" />
-			</body>
-		</html>
+		<ViewTransitions>
+			<html lang="es">
+				<body className="bg-neutral-800">
+					<Header />
+					<Navbar />
+					{children}
+					<Toaster position="top-right" />
+				</body>
+			</html>
+		</ViewTransitions>
 	);
 }
