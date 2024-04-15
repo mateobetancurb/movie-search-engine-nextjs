@@ -1,7 +1,7 @@
 "use client";
 import { toast } from "sonner";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import useStore from "@/stores/favorites";
 
 export const FavoriteList = () => {
