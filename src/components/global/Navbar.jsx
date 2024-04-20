@@ -2,8 +2,8 @@ import { NavbarItem } from "@/components";
 
 const navbarItems = [
 	{ path: "/", name: "Inicio" },
-	{ path: "peliculas", name: "Películas" },
-	{ path: "favoritos", name: "Mis favoritos" },
+	{ path: "/peliculas", name: "Películas" },
+	{ path: "/favoritos", name: "Mis favoritos" },
 ];
 
 export const Navbar = () => {
