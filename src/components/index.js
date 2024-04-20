@@ -2,6 +2,7 @@
 export * from "./home/PopularMovies";
 export * from "./home/UpcomingMovies";
 export * from "./home/NowPlaying";
+export * from "./home/TopRatedMovies";
 
 // global
 export * from "./global/Header";
