@@ -6,7 +6,9 @@ export const TopRatedMovies = async () => {
 
 	return (
 		<section className="mb-10">
-			<h2 className="text-white text-xl mb-5">💯 Las mejores calificadas</h2>
+			<h2 className="text-white text-xl mb-5 w-max">
+				💯 Las mejores calificadas
+			</h2>
 			<MoviesCarousel movies={topRatedMoviesList} />
 		</section>
 	);
