@@ -6,5 +6,6 @@ export const TMDB_URLS = {
 		findById: `${env.TMDB_HOSTNAME}/movie`,
 		upcoming: `${env.TMDB_HOSTNAME}/movie/upcoming`,
 		nowPlaying: `${env.TMDB_HOSTNAME}/movie/now_playing`,
+		topRated: `${env.TMDB_HOSTNAME}/movie/top_rated`,
 	},
 };
