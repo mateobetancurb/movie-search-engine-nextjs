@@ -2,7 +2,7 @@ import { NavbarItem } from "@/components";
 
 const navbarItems = [
 	{ path: "/", name: "Películas" },
-	{ path: "/peliculas", name: "TV Series" },
+	{ path: "/series", name: "Series" },
 	{ path: "/favoritos", name: "Mis favoritos" },
 ];
 
