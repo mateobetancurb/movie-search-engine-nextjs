@@ -7,7 +7,7 @@ export const NowPlaying = async () => {
 	return (
 		<section className="mb-10">
 			<h2 className="text-white text-xl mb-5">📺 Las personas están viendo</h2>
-			<MoviesCarousel movies={playingMovies} />
+			<MoviesCarousel list={playingMovies} />
 		</section>
 	);
 };
