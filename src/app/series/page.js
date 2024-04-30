@@ -1,7 +1,7 @@
 import { AiringToday } from "@/components";
 
 export const metadata = {
-	title: "Series",
+	title: "Movies.com - Series",
 	description: "Aquí podrás ver y guardar en favoritos tus series favoritas",
 };
 
