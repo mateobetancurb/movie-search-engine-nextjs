@@ -1,8 +1,8 @@
 import { AiringToday } from "@/components";
 
 export const metadata = {
-	title: "Películas",
-	description: "Aquí podrás ver y guardar en favoritos tus películas favoritas",
+	title: "Series",
+	description: "Aquí podrás ver y guardar en favoritos tus series favoritas",
 };
 
 export default function Series() {
