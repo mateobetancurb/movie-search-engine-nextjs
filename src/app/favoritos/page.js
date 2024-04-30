@@ -1,7 +1,7 @@
 import { FavoriteList } from "@/components";
 
 export const metadata = {
-	title: "Tus favoritos",
+	title: "Movies.com - Favoritos",
 	description:
 		"Aquí podrás guardar tus programas de TV, películas o series favoritas",
 };
