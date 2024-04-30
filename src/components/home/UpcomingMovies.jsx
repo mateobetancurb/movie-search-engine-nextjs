@@ -6,7 +6,7 @@ export const UpcomingMovies = async () => {
 	return (
 		<section className="mb-10">
 			<h2 className="text-white text-xl mb-5">🍿 Espéralas muy pronto</h2>
-			<MoviesCarousel movies={upcomingMovies} />
+			<MoviesCarousel list={upcomingMovies} />
 		</section>
 	);
 };
