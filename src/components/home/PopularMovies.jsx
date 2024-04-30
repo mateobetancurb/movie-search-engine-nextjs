@@ -7,7 +7,7 @@ export const PopularMovies = async () => {
 	return (
 		<section className="mb-10">
 			<h2 className="text-white text-xl mb-5">✨ Películas populares</h2>
-			<MoviesCarousel movies={popularMoviesList} />
+			<MoviesCarousel list={popularMoviesList} />
 		</section>
 	);
 };
