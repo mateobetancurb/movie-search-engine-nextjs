@@ -4,6 +4,9 @@ export * from "./home/UpcomingMovies";
 export * from "./home/NowPlaying";
 export * from "./home/TopRatedMovies";
 
+// series
+export * from "./series/AiringToday";
+
 // global
 export * from "./global/Header";
 export * from "./global/Navbar";
