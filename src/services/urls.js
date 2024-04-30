@@ -8,4 +8,10 @@ export const TMDB_URLS = {
 		nowPlaying: `${env.TMDB_HOSTNAME}/movie/now_playing`,
 		topRated: `${env.TMDB_HOSTNAME}/movie/top_rated`,
 	},
+	series: {
+		airingToday: `${env.TMDB_HOSTNAME}/tv/airing_today`,
+		onTheAir: `${env.TMDB_HOSTNAME}/tv/on_the_air`,
+		popular: `${env.TMDB_HOSTNAME}/tv/popular`,
+		topRated: `${env.TMDB_HOSTNAME}/tv/top_rated`,
+	},
 };
