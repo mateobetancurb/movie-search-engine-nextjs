@@ -8,21 +8,21 @@ import {
 	CarouselPrevious,
 } from "@/components";
 
-export const MoviesCarousel = async ({ movies }) => {
+export const MoviesCarousel = async ({ list }) => {
 	const imageDomainUrl = "https://image.tmdb.org/t/p/w500";
 
 	return (
 		<Carousel>
 			<CarouselContent>
-				{movies?.map((movie) => (
+				{list?.map((item) => (
 					<CarouselItem
-						key={movie.id}
+						key={item.id}
 						className="basis-6/7 md:basis-1/2 lg:basis-1/5 pl-4"
 					>
-						<Link href={`pelicula/${movie.id}`}>
+						<Link href={`pelicula/${item.id}`}>
 							<Image
-								src={`${imageDomainUrl}${movie?.poster_path}`}
-								alt={movie?.original_title}
+								src={`${imageDomainUrl}${item?.poster_path}`}
+								alt={item?.original_title}
 								width={200}
 								height={200}
 								priority={true}
