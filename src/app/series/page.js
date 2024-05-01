@@ -1,4 +1,4 @@
-import { AiringToday } from "@/components";
+import { AiringToday, OnTheAir } from "@/components";
 
 export const metadata = {
 	title: "Movies.com - Series",
@@ -10,6 +10,7 @@ export default function Series() {
 		<>
 			<div className="p-20">
 				<AiringToday />
+				<OnTheAir />
 			</div>
 		</>
 	);
