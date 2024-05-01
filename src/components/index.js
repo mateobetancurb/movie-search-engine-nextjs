@@ -6,6 +6,7 @@ export * from "./home/TopRatedMovies";
 
 // series
 export * from "./series/AiringToday";
+export * from "./series/OnTheAir";
 
 // global
 export * from "./global/Header";
