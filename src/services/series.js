@@ -69,3 +69,26 @@ export const getPopular = async () => {
 		throw error;
 	}
 };
+
+export const getTopRated = async () => {
+	try {
+		const ACCESS_TOKEN_API = env.ACCESS_TOKEN_API;
+
+		const req = await fetch(TMDB_URLS.series.topRated, {
+			headers: {
+				accept: "application/json",
+				Authorization: `Bearer ${ACCESS_TOKEN_API}`,
+			},
+		});
+
+		if (!req.ok) {
+			throw new Error(`HTTP error ${req.status}`);
+		}
+
+		const { results } = await req.json();
+		return results;
+	} catch (error) {
+		console.error("Error al obtener detalles de la serie:", error);
+		throw error;
+	}
+};
