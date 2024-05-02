@@ -8,6 +8,7 @@ export * from "./home/TopRatedMovies";
 export * from "./series/AiringToday";
 export * from "./series/OnTheAir";
 export * from "./series/Popular";
+export * from "./series/TopRated";
 
 // global
 export * from "./global/Header";
