@@ -1,4 +1,4 @@
-import { AiringToday, OnTheAir, Popular } from "@/components";
+import { AiringToday, OnTheAir, Popular, TopRated } from "@/components";
 
 export const metadata = {
 	title: "Movies.com - Series",
@@ -9,6 +9,7 @@ export default function Series() {
 	return (
 		<>
 			<div className="p-20">
+				<TopRated />
 				<Popular />
 				<AiringToday />
 				<OnTheAir />
