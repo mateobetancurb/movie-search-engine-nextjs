@@ -71,8 +71,8 @@ export const MovieDetails = ({ details }) => {
 							src={`${imageDomainUrl}${details?.backdrop_path}`}
 							alt={details?.original_title}
 							priority={true}
-							width={900}
-							height={900}
+							width={500}
+							height={500}
 							className="rounded-xl mb-10 md:mb-0 object-cover"
 						/>
 					</div>
